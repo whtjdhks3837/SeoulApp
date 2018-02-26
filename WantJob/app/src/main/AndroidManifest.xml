@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="konkuk.com.wantjob">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+
+        <activity android:name=".Activity.PermissionCheck">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.CoverActivity"/>
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.JoinActivity"/>
+        <activity android:name=".Activity.MainActivity"/>
+        <activity android:name=".Activity.PeriodActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Activity.PeriodContentActivity"/>
+        <activity android:name=".Activity.PlayActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Activity.PlayContentActivity"/>
+        <activity android:name=".Activity.InterestActivity"/>
+        <activity android:name=".Activity.InterestContentActivity"/>
+        <activity android:name=".Activity.CommunityWriteActivity"/>
+        <activity android:name=".Activity.CommunityActivity"/>
+        <activity android:name=".Activity.CommunityContentActivity"
+            android:windowSoftInputMode="adjustPan"/>
+    </application>
+
+</manifest>

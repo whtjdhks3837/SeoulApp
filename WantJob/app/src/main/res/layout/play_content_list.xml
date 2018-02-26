@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/bottom_line">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/play_content_list_title"
+        android:text="title"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/appMainColor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/play_content_list_period"
+        android:text="10.30~10.31"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:id="@+id/play_content_list_img"
+        android:src="@drawable/default_img"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/play_content_list_price"
+        android:text="입장료"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/play_content_list_address"
+        android:text="장소"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>

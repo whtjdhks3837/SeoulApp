@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_write"
+        android:id="@+id/community_write_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/write_box_round_white"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="제목(15글자 제한)"
+            android:textSize="25dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:id="@+id/community_write_title"
+            android:maxLength="15" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:gravity="top"
+            android:background="@drawable/write_box_round_white"
+            android:hint="내용(200글자 제한)"
+            android:id="@+id/community_write_content"
+            android:padding="10dp"
+            android:maxLength="200"/>
+    </LinearLayout>
+</LinearLayout>
